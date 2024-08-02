@@ -7,6 +7,13 @@ document.getElementById('search').addEventListener('click', () => {
     }
 });
 
+document.getElementById('city').addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('search').click();
+    }
+});
+
 async function fetchWeather(city) {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
