@@ -30,7 +30,6 @@ async function fetchWeather(city) {
                 document.getElementById('wind-speed').textContent = `${data.wind.speed} m/s`;
                 document.getElementById('pressure').textContent = `${data.main.pressure} hPa`;
 
-                // Set and show the weather icon
                 const iconCode = data.weather[0].icon;
                 const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
                 const weatherIcon = document.getElementById('weather-icon');
