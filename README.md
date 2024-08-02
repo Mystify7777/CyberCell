@@ -21,9 +21,9 @@ This is a simple weather application that provides current weather information f
 ## Usage
 
 1. Enter the name of the city in the search bar.
-2. Click the "Search" button.
+2. Click the "Get Weathher" button.
 3. View the current weather information displayed on the screen.
 
 ## API Key
 
-This app uses the OpenWeatherMap API. You will need to sign up for an API key and replace `YOUR_API_KEY` in the JavaScript file with your actual API key.
+This app uses the OpenWeatherMap API. You will need to sign up for an API key and replace `apiKey` in the JavaScript file with your actual API key.
