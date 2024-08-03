@@ -19,7 +19,7 @@ This is a simple weather application that provides current weather information f
 ## Usage
 
 1. Enter the name of the city in the search bar.
-2. Click the "Get Weathher" button.
+2. Click the "Get Weather" button.
 3. View the current weather information displayed on the screen.
 
 ## API Key
