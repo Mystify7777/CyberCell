@@ -1,5 +1,17 @@
+/**
+ * API key obtained from openWeatherMap API.
+ * 
+ * This Api key is required to fetch the realtime weather. 
+ */
+ 
+
 const apiKey = 'bc7d1b26f281df06c255668b4332188f';
 
+/* 
+ * Event listener for the search button click event.
+ *
+ * Fetches the weather data for the city entered in the input field.
+ */
 document.getElementById('search').addEventListener('click', () => {
     const city = document.getElementById('city').value;
     if (city) {
@@ -7,6 +19,11 @@ document.getElementById('search').addEventListener('click', () => {
     }
 });
 
+/*
+ * Event listener for the city input field keypress event.
+ * 
+ * Simulates a click on the search button when the Enter key is pressed.
+ */
 document.getElementById('city').addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault();
@@ -14,6 +31,16 @@ document.getElementById('city').addEventListener('keypress', (event) => {
     }
 });
 
+/*
+ * Fetches the current weather data for a given city from the OpenWeatherMap API.
+ * 
+ * parameter {string} city - The name of the city to fetch the weather data for.
+ * 
+ * example:
+ * fetchWeather('London');
+ * 
+ * returns {Promise<void>} A promise that resolves when the weather data has been fetched and displayed.
+ */
 async function fetchWeather(city) {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
