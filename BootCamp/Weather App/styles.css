@@ -1,4 +1,7 @@
 body {
+    /**
+   * Set the font family, display, and alignment for the body element.
+   */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -11,6 +14,9 @@ body {
 }
 
 body::before {
+    /**
+   * Add a background image to the body element.
+   */
     content: "";
     position: absolute;
     top: 0;
@@ -25,6 +31,9 @@ body::before {
 }
 
 .weather-container {
+    /**
+   * Style the weather container element.
+   */
     position: relative;
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
@@ -37,6 +46,9 @@ body::before {
 }
 
 input[type="text"] {
+    /**
+   * Style the text input element.
+   */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -48,11 +60,17 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
+    /**
+   * Style the focused text input element.
+   */
     outline: none;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
 button {
+    /**
+   * Style the button element.
+   */
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -62,15 +80,25 @@ button {
 }
 
 button:hover {
+    /**
+   * Style the hovered button element.
+   */
+  
     background: #0056b3;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 #weather-info {
+     /**
+   * Style the weather info element.
+   */
     margin-top: 20px;
 }
 
 .city-header {
+     /**
+   * Style the city header element.
+   */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,17 +106,26 @@ button:hover {
 }
 
 #city-name {
+    /**
+   * Style the city name element.
+   */
     margin: 0;
     margin-right: 10px;
 }
 
 #weather-icon {
+     /**
+   * Style the weather icon element.
+   */
     width: 50px;
     height: 50px;
     display: none;
 }
-
+/**
+   * Style the weather table element.
+   */
 #weather-table {
+     
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
