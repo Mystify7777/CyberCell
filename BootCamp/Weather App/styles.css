@@ -1,20 +1,20 @@
 body {
-    /**
+ /**
    * Set the font family, display, and alignment for the body element.
    */
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     position: relative;
-    color: #fff;
+    color: #000000a9;
     overflow: hidden;
-}
-
-body::before {
-    /**
+  }
+  
+  body::before {
+ /**
    * Add a background image to the body element.
    */
     content: "";
@@ -27,11 +27,11 @@ body::before {
         no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
-    opacity: 0.7;
-}
-
-.weather-container {
-    /**
+    opacity: 0.8;
+  }
+  
+  .weather-container {
+ /**
    * Style the weather container element.
    */
     position: relative;
@@ -43,10 +43,20 @@ body::before {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-}
+    transition: all 0.3s ease-out
+  }
 
-input[type="text"] {
-    /**
+  .weather-container:hover {
+ /**
+   * Style the weather container element hovered.
+   */
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.01); 
+    box-shadow: 0 0 15px rgba(212, 212, 212, 0.69);
+  }
+
+  input[type="text"] {
+ /**
    * Style the text input element.
    */
     padding: 10px;
@@ -57,74 +67,103 @@ input[type="text"] {
     transition: box-shadow 0.3s ease;
     background: #fff;
     color: #333;
-}
-
-input[type="text"]:focus {
-    /**
+  }
+  
+  input[type="text"]:hover {
+ /**
+   * Style the hover text input element.
+   */
+    
+    box-shadow: 0 0 10px rgba(122, 123, 255, 0.5);
+  }
+  
+  input[type="text"]:focus {
+ /**
    * Style the focused text input element.
    */
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-}
-
-button {
-    /**
+    outline: 1px solid grey;
+    box-shadow: 0 0 8px rgba(122, 123, 255, 0.5);
+  }
+  
+  button {
+ /**
    * Style the button element.
    */
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #007bff;
+    background: #515c69;
     color: #fff;
     cursor: pointer;
-}
-
-button:hover {
-    /**
+  }
+  
+  button:hover {
+ /**
    * Style the hovered button element.
    */
   
-    background: #0056b3;
+    background: #6d7785;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-#weather-info {
-     /**
+    border: 1px solid rgb(36, 34, 34);
+  }
+  
+  #weather-info {
+ /**
    * Style the weather info element.
    */
     margin-top: 20px;
-}
-
-.city-header {
-     /**
+  }
+  
+  .city-header {
+ /**
    * Style the city header element.
    */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
-
-#city-name {
-    /**
+  }
+  
+  #city-name {
+ /**
    * Style the city name element.
    */
     margin: 0;
     margin-right: 10px;
-}
-
-#weather-icon {
-     /**
+  }
+  
+  #weather-icon {
+ /**
    * Style the weather icon element.
    */
     width: 50px;
     height: 50px;
     display: none;
-}
+    transition: transform 0.3s ease;
+  }
+  
+  #weather-icon:hover { 
+ /**
+   * Style the hovered weather icon element.
+   */
+    transform: scale(1.2); 
+  } 
+  
 /**
+  *Additional hovering styles.
+  */
+  .hover-dark{
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .hover-dark:hover{
+    color:#111
+  }
+
+ /**
    * Style the weather table element.
    */
-#weather-table {
+  #weather-table {
      
     width: 100%;
     border-collapse: collapse;
@@ -133,38 +172,39 @@ button:hover {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-}
-
-#weather-table th,
-#weather-table td {
+  }
+  
+  #weather-table th,
+  #weather-table td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
     color: #333;
-}
-
-#weather-table th {
-    background-color: #ada8a87f;
+  }
+  
+  #weather-table th {
+    background-color: #ada8a8db;
     color: #fff;
     font-weight: bold;
-}
-
-#weather-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#weather-table tr:nth-child(odd) {
+  }
+  
+  #weather-table tr:nth-child(even) {
+    background-color: #f5f2f26f;
+  }
+  
+  #weather-table tr:nth-child(odd) {
     background-color: #fff;
-}
-
-#weather-table tr:hover {
+  }
+  
+  #weather-table tr:hover {
     background-color: #f1f1f1;
-}
-
-#weather-table caption {
+  }
+  
+  #weather-table caption {
     caption-side: top;
     padding: 10px;
     font-size: 1.2em;
     color: #333;
     font-weight: bold;
-}
+  }
+  
