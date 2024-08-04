@@ -28,7 +28,7 @@ body::before {
 .weather-container-border {
   position: relative;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(57, 73, 171, 0.8), rgba(26, 35, 126, 0.8), rgba(13, 71, 161, 0.8));
+  background: linear-gradient(to bottom, rgba(57, 57, 57, 0.8), rgba(35, 35, 35, 0.8), rgba(13, 13, 13, 0.8));
   padding: 5px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -39,7 +39,7 @@ body::before {
 }
 
 .weather-container-border:hover {
-  background: linear-gradient(to bottom, rgba(19, 24, 57, 0.8), rgba(26, 35, 126, 0.8), rgba(7, 40, 89, 0.8));
+  background: linear-gradient(to bottom, rgba(19, 19, 19, 0.8), rgba(26, 26, 26, 0.8), rgba(7, 7, 7, 0.8));
   padding: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
@@ -48,10 +48,10 @@ body::before {
 .weather-container {
   position: relative;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(27, 27, 56, 0.6), rgba(37, 37, 90, 0.6), rgba(32, 32, 80, 0.6));
+  background: linear-gradient(to bottom, rgba(27, 27, 27, 0.6), rgba(37, 37, 37, 0.6), rgba(32, 32, 32, 0.6));
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(7, 7, 88, 0.5);
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.5);
   width: 100%;
   max-width: 600px;
   box-sizing: border-box;
@@ -59,9 +59,9 @@ body::before {
 }
 
 .weather-container:hover {
-  background: linear-gradient(to bottom, rgba(27, 27, 56, 1), rgba(37, 37, 90, 1), rgb(23, 23, 81));
+  background: linear-gradient(to bottom, rgba(27, 27, 27, 1), rgba(37, 37, 37, 1), rgb(23, 23, 23));
   transform: scale(1.01);
-  box-shadow: 0 0 15px rgba(7, 7, 88, 0.7);
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.7);
 }
 
 /* Input text styling with hover and focus effects */
@@ -72,20 +72,20 @@ input[type="text"] {
   width: 200px;
   margin-right: 10px;
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  background: #bec7fd;
+  background: #cdcfdb;
   color: #0c0c0c;
-  text-decoration:solid
+  text-decoration: solid;
 }
 
 input[type="text"]:hover {
   box-shadow: 0 0 15px rgba(122, 123, 255, 0.5);
-  border-color: #317cbd;
+  border-color: #07131d;
 }
 
 input[type="text"]:focus {
   outline: 2px solid #282638;
   box-shadow: 0 0 8px rgba(122, 123, 255, 0.5);
-  border-color: #7300ff;
+  border-color: #3e3e3e;
 }
 
 /* Button styling with hover effect */
@@ -93,24 +93,23 @@ button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #3949ab;
+  background: #36394b;
   color: #fff;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-  background: #5c6bc0;
+  background: #141729;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   border: 1px solid #333;
 }
 
 button:active {
-  background: #2e3b87;
+  background: #3f3f3f;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
   transform: translateY(2px);
 }
-
 
 /* Weather info section */
 #weather-info {
@@ -161,7 +160,7 @@ button:active {
   border-collapse: collapse;
   margin: 0 auto;
   display: none;
-  background-color: #303f9f;
+  background-color: #303030;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -169,26 +168,26 @@ button:active {
 #weather-table th,
 #weather-table td {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: none;
   text-align: left;
   color: #fff;
 }
 
 #weather-table th {
-  background-color: #3949ab;
+  background-color: #383838;
   font-weight: bold;
 }
 
 #weather-table tr:nth-child(even) {
-  background-color: #3f51b5;
+  background-color: #404040;
 }
 
 #weather-table tr:nth-child(odd) {
-  background-color: #303f9f;
+  background-color: #303030;
 }
 
 #weather-table tr:hover {
-  background-color: #5c6bc0;
+  background-color: #505050;
 }
 
 #weather-table caption {
