@@ -96,9 +96,11 @@ body, html {
     transition: transform 0.3s ease-in-out;
 }
 
-
+.content-section h2:hover {
+    transform: scale(1.03);
+}
 .content-section p:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 /* Basic button styling */
