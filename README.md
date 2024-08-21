@@ -11,12 +11,14 @@ Welcome to the **CyberCell** repository! This repository contains two different 
 This project demonstrates a **Parallax Scrolling Effect** using HTML, CSS, and JavaScript. It includes a visually appealing design with smooth scrolling and interactive elements.
 
 - **Project Link**: [Parallax Effect](https://github.com/Mystify7777/CyberCell/tree/main/BootCamp/Parallax)
+- **Live Link**: [Visit Site](https://mystify7777.github.io/CyberCell/BootCamp/Parallax/)
 
 ### 2. Weather App
 
 The **Weather App** is a fully responsive application that allows users to check the current weather for any location. The app uses an API to fetch real-time weather data and displays it in an intuitive and user-friendly interface.
 
 - **Project Link**: [Weather App](https://github.com/Mystify7777/CyberCell/tree/main/BootCamp/Weather%20App)
+- **Live Link**: [Visit Site](https://mystify7777.github.io/CyberCell/BootCamp/Weather%20App/)
 
 ## Getting Started
 
