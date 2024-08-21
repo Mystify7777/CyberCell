@@ -54,6 +54,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 - Fonts used are from Google Fonts.
 
 ## Contact
-For any inquiries or feedback, please contact [Mystify7777] at [aryankumar.55566@gmail.com].
+For any inquiries or feedback, please contact [Me](aryankumar.55566@gmail.com) at [Mystify7777](https://github.com/Mystify7777).
 
 
