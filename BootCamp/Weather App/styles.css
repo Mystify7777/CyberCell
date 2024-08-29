@@ -96,7 +96,7 @@ button {
   background: #36394b;
   color: #fff;
   cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
@@ -190,9 +190,5 @@ button:active {
   background-color: #505050;
 }
 
-#weather-table caption {
-  caption-side: top;
-  padding: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
+
+
